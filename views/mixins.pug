@@ -1,0 +1,8 @@
+mixin breadcrumb(title)
+  section#breadcrumb
+    .container
+      .row
+        .col-sm-12
+          a(href="/") home
+          span.arrow &nbsp;>&nbsp;
+          span.current=title

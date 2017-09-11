@@ -1,0 +1,550 @@
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0E0E0E; }
+
+hr {
+  border-width: 3px;
+  border-color: #D02A38; }
+
+hr.light {
+  border-color: white; }
+
+a {
+  color: #D02A38;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+  a:focus, a:hover {
+    color: #d02a38; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif; }
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px; }
+
+.bg-primary {
+  background-color: #D02A38 !important; }
+
+.bg-dark {
+  color: white;
+  background-color: #222222 !important; }
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7); }
+
+section {
+  padding: 100px 0; }
+
+.section-heading {
+  margin-top: 0; }
+
+::-moz-selection {
+  color: white;
+  background: #222222;
+  text-shadow: none; }
+
+::selection {
+  color: white;
+  background: #222222;
+  text-shadow: none; }
+
+img::selection {
+  color: white;
+  background: transparent; }
+
+img::-moz-selection {
+  color: white;
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: #222222; }
+
+.section-head {
+  font-size: 52px;
+  line-height: 68px;
+  font-weight: 500;
+  color: #fff; }
+  .section-head.color-red {
+    color: #D02A38; }
+
+.page-header {
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 10px; }
+  .page-header.color-red {
+    color: #D02A38; }
+
+.page-description {
+  font-size: 18px;
+  line-height: 28px;
+  color: #b5b5b5;
+  margin-top: 14px; }
+
+.section-subhead {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff; }
+
+.text-red {
+  color: #D02A38; }
+
+.btn-danger {
+  background: url("../images/arrowwhite.png") no-repeat #D02A38 80% center;
+  padding: 14px 58px 14px 42px; }
+
+section.content {
+  padding-top: 10px; }
+
+#breadcrumb {
+  padding-top: 150px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #b5b5b5; }
+  #breadcrumb .arrow {
+    padding: 0 10px; }
+  #breadcrumb a {
+    font-size: 12px;
+    line-height: 15px; }
+
+.tooltip.show {
+  opacity: 1; }
+  .tooltip.show .tooltip-inner {
+    max-width: 280px;
+    padding: 20px;
+    color: #000;
+    background-color: #fff;
+    /*!important is not necessary if you place custom.css at the end of your css calls. For the purpose of this demo, it seems to be required in SO snippet*/
+    color: #fff; }
+    .tooltip.show .tooltip-inner h1 {
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px; }
+    .tooltip.show .tooltip-inner p {
+      color: #333333; }
+
+#mainNav {
+  border-color: rgba(34, 34, 34, 0.05);
+  background-color: rgba(85, 85, 85, 0.3);
+  font-family: 'Montserrat', sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+  #mainNav .navbar-brand {
+    font-weight: 700;
+    color: #D02A38;
+    font-family: 'Montserrat', sans-serif; }
+    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #d02a38; }
+  #mainNav .navbar-toggle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000; }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0 0 0 38px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff; }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+      color: #D02A38; }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+      color: #D02A38 !important;
+      text-transform: none;
+      background-color: transparent; }
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
+      #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+        background-color: transparent; }
+
+footer {
+  margin-top: 25px; }
+  footer .navbar {
+    padding-left: 0;
+    padding-right: 0; }
+    footer .navbar .nav-link {
+      color: #b5b5b5;
+      font-size: 12px;
+      line-height: 15px;
+      padding-left: 0;
+      padding-right: 27px; }
+      footer .navbar .nav-link:hover {
+        color: #D02A38; }
+      footer .navbar .nav-link.active {
+        color: #D02A38 !important; }
+  footer .social-link {
+    padding-left: 36px;
+    padding-right: 0; }
+    footer .social-link a {
+      padding-left: 28px;
+      color: #b5b5b5;
+      font-size: 12px;
+      line-height: 15px; }
+      footer .social-link a.facebook {
+        background: url("../images/social/facebook.png") no-repeat transparent left center; }
+        footer .social-link a.facebook:hover {
+          background-image: url("../images/social/facebook_active.png"); }
+      footer .social-link a.instagram {
+        background: url("../images/social/instagram.png") no-repeat transparent left center; }
+        footer .social-link a.instagram:hover {
+          background-image: url("../images/social/instagram_active.png"); }
+      footer .social-link a.youtube {
+        background: url("../images/social/youtube.png") no-repeat transparent left center; }
+        footer .social-link a.youtube:hover {
+          background-image: url("../images/social/youtube_active.png"); }
+      footer .social-link a.twitter {
+        background: url("../images/social/twitter.png") no-repeat transparent left center; }
+        footer .social-link a.twitter:hover {
+          background-image: url("../images/social/twitter_active.png"); }
+      footer .social-link a:hover {
+        color: #D02A38; }
+  footer .feedback {
+    font-size: 11px;
+    line-height: 14px;
+    margin-top: 12px;
+    color: #666666; }
+    footer .feedback a {
+      font-size: 11px; }
+  footer .copy {
+    border-top: 1px solid #666666;
+    font-size: 11px;
+    line-height: 14px;
+    margin-top: 10px;
+    padding-top: 10px;
+    color: #666666; }
+
+#intro {
+  padding: 0;
+  width: 100%;
+  min-height: 800px;
+  position: relative;
+  background: url(../images/photo_background.png) no-repeat top center;
+  background-size: auto 100%; }
+  #intro .main-banner
+.sub-head {
+    margin-top: 32px; }
+  #intro .red-title {
+    margin-top: 187px;
+    color: #D02A38;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px; }
+  #intro .submit-btn {
+    margin-top: 62px; }
+
+section#how-to-join {
+  padding-top: 82px; }
+  section#how-to-join .steps {
+    margin-top: 58px; }
+    section#how-to-join .steps .step {
+      width: 320px; }
+    section#how-to-join .steps .title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      margin-top: 30px; }
+    section#how-to-join .steps .description {
+      color: #b5b5b5;
+      font-size: 16px;
+      line-height: 26px;
+      margin-top: 11px; }
+
+section#countdown {
+  padding-top: 106px;
+  background: url(../images/circle.png) no-repeat 78% top; }
+  section#countdown #js-countdown {
+    margin-top: 60px; }
+    section#countdown #js-countdown .countdown-column {
+      width: 185px; }
+      section#countdown #js-countdown .countdown-column .countdown-value {
+        color: #D02A38;
+        font-size: 144px;
+        font-weight: 500;
+        line-height: 175px;
+        text-align: center; }
+      section#countdown #js-countdown .countdown-column .countdown-label {
+        border-top: 2px solid white;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+        color: #fff;
+        padding-top: 10px; }
+
+section#entry {
+  padding-top: 82px; }
+
+section#info {
+  padding-top: 67px;
+  padding-bottom: 30px; }
+  section#info .content {
+    background-color: #1A181B;
+    padding-left: 30px; }
+    section#info .content .sub-head {
+      margin-top: -24px; }
+    section#info .content .link {
+      margin-top: 34px; }
+      section#info .content .link .arrow-red {
+        background: url("../images/buttonarrow.png") no-repeat transparent center center;
+        display: inline-block;
+        width: 20px; }
+    section#info .content .image {
+      padding: 0;
+      height: 450px;
+      width: 100%; }
+      section#info .content .image .img {
+        height: 450px;
+        width: 100%; }
+        section#info .content .image .img.img-prizes {
+          background: url("../images/prizes.png") no-repeat transparent -17px 65px; }
+        section#info .content .image .img.img-judges {
+          background: url("../images/judges.png") no-repeat transparent -16px 173px; }
+
+section#join_contest {
+  padding-top: 28px;
+  background: url(../images/joincontest_bg.png) no-repeat top center; }
+  section#join_contest .row {
+    margin-left: 4.3%; }
+  section#join_contest .sub-head {
+    font-size: 44px;
+    line-height: 54px; }
+  section#join_contest button {
+    margin-top: 18px; }
+
+section#behind-scenes {
+  padding-top: 76px; }
+  section#behind-scenes .section-subhead {
+    margin-top: 12px; }
+  section#behind-scenes .video {
+    margin-top: 42px; }
+
+section#sponsors {
+  padding-top: 40px; }
+  section#sponsors .sponsors {
+    margin-top: 60px; }
+  section#sponsors .sponsor {
+    width: 160px;
+    height: 98px;
+    vertical-align: middle; }
+    section#sponsors .sponsor img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+
+.sub-head {
+  color: #fff;
+  font-size: 52px;
+  line-height: 68px;
+  font-weight: 500; }
+
+.description {
+  margin-top: 14px;
+  color: #b5b5b5;
+  font-size: 18px;
+  line-height: 28px; }
+
+#toc ol {
+  padding-left: 14px;
+  margin-top: 80px; }
+  #toc ol li {
+    padding-left: 14px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 40px; }
+    #toc ol li ol {
+      margin-top: 26px;
+      padding-left: 14px; }
+      #toc ol li ol li {
+        list-style-position: inside;
+        padding-bottom: 10px;
+        margin-bottom: 14px; }
+
+#prizes
+.prizes {
+  margin-top: 62px; }
+  #prizes
+.prizes > div {
+    margin-bottom: 28px; }
+  #prizes
+.prizes .prize {
+    width: 245px;
+    height: 282px;
+    background-color: #1A181B;
+    border-radius: 4px; }
+    #prizes
+.prizes .prize .image {
+      margin-top: 44px; }
+    #prizes
+.prizes .prize .prize-line {
+      margin-top: 29px;
+      font-size: 14px;
+      line-height: 16px; }
+      #prizes
+.prizes .prize .prize-line .first {
+        padding-left: 0;
+        padding-right: 8px; }
+      #prizes
+.prizes .prize .prize-line .content {
+        padding: 0;
+        color: #D02A38;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center; }
+      #prizes
+.prizes .prize .prize-line .last {
+        padding-right: 0;
+        padding-left: 8px; }
+    #prizes
+.prizes .prize .prize-details {
+      margin-top: 16px; }
+      #prizes
+.prizes .prize .prize-details a {
+        font-size: 18px;
+        line-height: 28px;
+        color: #fff; }
+        #prizes
+.prizes .prize .prize-details a:hover {
+          text-decoration: none;
+          color: #D02A38; }
+    #prizes
+.prizes .prize.empty {
+      background-color: transparent; }
+    #prizes
+.prizes .prize .category {
+      margin-top: 20px;
+      font-size: 22px;
+      line-height: 30px;
+      color: #fff;
+      font-weight: 500; }
+    #prizes
+.prizes .prize hr {
+      margin-top: 0.5rem;
+      border-width: 2px;
+      margin-bottom: 0; }
+
+#judges {
+  padding-top: 0; }
+  #judges .judge {
+    margin-top: 60px; }
+    #judges .judge .name {
+      color: #D02A38;
+      font-size: 36px;
+      line-height: 44px; }
+    #judges .judge .info {
+      font-size: 18px;
+      line-height: 28px;
+      color: #fff; }
+
+.text-primary {
+  color: #D02A38 !important; }
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
+.container {
+  max-width: 1100px; }
+
+.btn-default {
+  color: #000;
+  border-color: white;
+  background-color: white; }
+  .btn-default.focus, .btn-default:focus {
+    color: #000;
+    border-color: #bfbfbf;
+    background-color: #e6e6e6; }
+  .btn-default:hover {
+    color: #000;
+    border-color: #e0e0e0;
+    background-color: #e6e6e6; }
+  .btn-default.active, .btn-default:active,
+  .open > .btn-default.dropdown-toggle {
+    color: #000;
+    border-color: #e0e0e0;
+    background-color: #e6e6e6; }
+    .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover,
+    .open > .btn-default.dropdown-toggle.focus,
+    .open > .btn-default.dropdown-toggle:focus,
+    .open > .btn-default.dropdown-toggle:hover {
+      color: #000;
+      border-color: #bfbfbf;
+      background-color: #d4d4d4; }
+  .btn-default.active, .btn-default:active,
+  .open > .btn-default.dropdown-toggle {
+    background-image: none; }
+  .btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover,
+  fieldset[disabled] .btn-default.focus,
+  fieldset[disabled] .btn-default:focus,
+  fieldset[disabled] .btn-default:hover {
+    border-color: white;
+    background-color: white; }
+  .btn-default .badge {
+    color: white;
+    background-color: #000; }
+
+.btn-primary {
+  color: white;
+  border-color: #D02A38;
+  background-color: #D02A38; }
+  .btn-primary.focus, .btn-primary:focus {
+    color: white;
+    border-color: #66151b;
+    background-color: #a6212d; }
+  .btn-primary:hover {
+    color: white;
+    border-color: #9d202a;
+    background-color: #a6212d; }
+  .btn-primary.active, .btn-primary:active,
+  .open > .btn-primary.dropdown-toggle {
+    color: white;
+    border-color: #9d202a;
+    background-color: #a6212d; }
+    .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
+    .open > .btn-primary.dropdown-toggle.focus,
+    .open > .btn-primary.dropdown-toggle:focus,
+    .open > .btn-primary.dropdown-toggle:hover {
+      color: white;
+      border-color: #66151b;
+      background-color: #881b25; }
+  .btn-primary.active, .btn-primary:active,
+  .open > .btn-primary.dropdown-toggle {
+    background-image: none; }
+  .btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover,
+  fieldset[disabled] .btn-primary.focus,
+  fieldset[disabled] .btn-primary:focus,
+  fieldset[disabled] .btn-primary:hover {
+    border-color: #D02A38;
+    background-color: #D02A38; }
+  .btn-primary .badge {
+    color: #D02A38;
+    background-color: white; }
+
+.btn {
+  font-weight: normal;
+  font-size: 14px;
+  border: none;
+  font-family: 'Montserrat', sans-serif; }
+
+.btn-xl {
+  padding: 15px 30px; }

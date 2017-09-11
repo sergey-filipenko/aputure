@@ -1,0 +1,16 @@
+#judges {
+  padding-top: 0;
+  .judge {
+    margin-top: 60px;
+    .name {
+      color: $theme-primary;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    .info {
+      font-size: 18px;
+      line-height: 28px;
+      color: $base;
+    }
+  }
+}

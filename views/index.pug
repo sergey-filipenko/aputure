@@ -1,0 +1,156 @@
+extends ../layouts/default
+append scripts
+  script(src="../js/countdown.js")
+    
+append body
+  section#intro
+    .container.main-banner
+      .row
+        .col-sm-12.red-title Lights on Location: 2017
+      .row
+        .col-sm-7.sub-head One minute. One light. One location.
+          
+      .row
+        .col-sm-6.description Less is sometimes best; think you have what it takes to make a video that will  wow the world and win some amazing prizes?
+      .row
+        .col-sm-2.submit-btn
+          button(type="button" class="btn btn-danger btn-lg") Submit Now 
+            
+  section#how-to-join
+    .container
+      .row
+        .col-sm-12.section-head How to join
+      .row
+        .col-sm-12.section-head.color-red #Lights on Location
+      .row.steps
+        .col-sm-12.d-flex.justify-content-between
+          .step
+            .row
+              .col-sm-12
+                img(src="images/step1.png")
+            .row.title
+              .col-sm-12 Step 1
+            .row.description
+              .col-sm-12 Make a 1 min video. One light. One location.
+  
+          .step
+            .row
+              .col-sm-12
+                img(src="images/step2.png")
+            .row.title
+              .col-sm-12 Step 2
+            .row.description
+              .col-sm-12 Broadcast a Facebook Live Behind the Scenes video and tag #[span.text-red #LightsOnLocation] and companies #[span.text-red @Aputure] and #[span.text-red @Wrapal]
+      
+          .step
+            .row
+              .col-sm-12
+                img(src="images/step3.png")
+            .row.title
+              .col-sm-12 Step 3
+            .row.description
+              .col-sm-12 After editing, submit your final entry to us via Facebook
+              
+  section#countdown
+    .container
+      .row
+        .col-sm-7.section-head Competition Begins: September 30th 2017
+      .row#js-countdown
+        .col-sm-12.d-flex.justify-content-between
+          .countdown-column
+            .countdown-value.js-countdown-days
+            .countdown-label Days
+          .countdown-column
+            .countdown-value.js-countdown-hours
+            .countdown-label Hours
+          .countdown-column
+            .countdown-value.js-countdown-minutes
+            .countdown-label Minutes
+          .countdown-column
+            .countdown-value.js-countdown-seconds
+            .countdown-label Seconds
+
+  section#entry
+    .container
+      .row
+        .col-sm-8.section-head Here's is a Sample Entry by #[span.text-red Max Honcharov]
+      .row
+        .col-sm-12.embed-responsive.embed-responsive-16by9
+          iframe(class="col-sm-12" frameborder="0" src="http://www.youtube.com/embed/CevxZvSJLk8")
+          
+  section#info
+    .container
+      .row
+        .col-sm-6
+          .content
+            .row
+              .col-sm-12.sub-head #[span.text-red $500,000] in #[br]Prizes to be won
+            .row
+              .col-sm-8.description Incredible filmmaking equipment, experiences and more.
+            .row.link
+              .col-sm-12
+                a(href="/prizes") More about Prizes#[span.arrow-red &nbsp;]
+            .row
+              .col-sm-12.image
+                .img.img-prizes
+            
+        .col-sm-6
+          .content
+            .row
+              .col-sm-12.sub-head Judges to #[br]impress
+            .row
+              .col-sm-8.description A panel of actors, filmmakers and industry experts.
+            .row.link
+              .col-sm-12
+                a(href="/judges") More about Judges#[span.arrow-red &nbsp;]
+            .row
+              .col-sm-12.image
+                .img.img-judges
+
+
+  section#join_contest
+    .container
+      .row
+        .col-sm-12.sub-head Join the contest
+      .row
+        .col-sm-2.submit-btn
+          button(type="button" class="btn btn-danger btn-lg") Submit Now 
+         
+  section#behind-scenes
+    .container
+      .row
+        .col-sm-8.section-head Behind the scenes
+      .row
+        .col-sm-8.section-subhead Sample Behind the Scenes video by Brian L Tan
+      .row
+          .col-sm-12.video.embed-responsive.embed-responsive-16by9
+            iframe(class="col-sm-12" frameborder="0" src="http://www.youtube.com/embed/_QqCu0ktlhM")
+          
+          
+  section#sponsors
+    .container
+      .row
+        .col-sm-12.sub-head Our Sponsors
+      .row.sponsors
+        .col-sm-12.d-flex.justify-content-between
+          .sponsor
+            img(src="images/sponsors/redgiant.png" alt="Red Giant")
+          .sponsor
+            img(src="images/sponsors/paralinx.png" alt="Paralinx")
+          .sponsor
+            img(src="images/sponsors/joby.png" alt="Joby")
+          .sponsor
+            img(src="images/sponsors/musicbed.png" alt="Musicbed")
+      .row.sponsors
+        .col-sm-12.d-flex.justify-content-between
+          .sponsor
+            img(src="images/sponsors/aphex.png" alt="Aphex")
+          .sponsor
+            img(src="images/sponsors/lowepro.png" alt="Lowepro")
+          .sponsor
+            img(src="images/sponsors/miller.png" alt="Miller")
+          .sponsor
+            img(src="images/sponsors/kesslercrane.png" alt="Kessler")
+
+          
+    

@@ -1,0 +1,158 @@
+#intro {
+  padding: 0;
+  width: 100%;
+  min-height: 800px;
+  position: relative;
+  background: url(../images/photo_background.png) no-repeat top center;
+  background-size: auto 100%;
+  .main-banner
+    .sub-head{
+      margin-top: 32px;
+    }  
+    .red-title {
+      margin-top: 187px;  
+      color: $theme-primary;
+      font-size: 36px;
+      font-weight: $fontWeightBold;
+      line-height: 44px;
+    }
+    .submit-btn {
+      margin-top: 62px;
+    }
+}
+section#how-to-join {
+  padding-top: 82px;
+  .steps {
+    .step {
+      width: 320px;
+    }
+    .title {
+      color: $base;
+      font-weight: $fontWeightBold;
+      font-size: 22px;
+      line-height: 27px;
+      margin-top: 30px;
+    }
+    .description {
+      color: $gray-lighter;
+      font-size: 16px;
+      line-height: 26px;
+      margin-top: 11px;
+    }
+    margin-top: 58px;
+  }
+}
+section#countdown {
+  padding-top: 106px;
+  background: url(../images/circle.png) no-repeat 78% top;
+  #js-countdown {
+    margin-top: 60px;
+    .countdown-column {
+      width:185px;
+      .countdown-value {
+        color: $theme-primary;
+        font-size: 144px;
+        font-weight: $fontWeightBold;
+        line-height: 175px;
+        text-align: center;
+      }
+      .countdown-label {
+        border-top: 2px solid white;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+        color: $base;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+section#entry {
+  padding-top: 82px;
+}
+section#info {
+  padding-top: 67px;
+  padding-bottom: 30px;
+  .content {
+    background-color: #1A181B;
+    padding-left: 30px;
+    .sub-head {
+      margin-top: -24px;
+    }
+    .link {
+      margin-top: 34px;
+      .arrow-red {
+        background: url('../images/buttonarrow.png') no-repeat transparent center center;
+        display: inline-block;
+        width: 20px;
+      }
+    }
+    .image {
+      padding: 0;
+      height: 450px;
+      width:100%;
+      .img {
+        height: 450px;
+        width:100%;
+        &.img-prizes {
+          background: url("../images/prizes.png") no-repeat transparent -17px 65px;
+        }
+        &.img-judges {
+          background: url("../images/judges.png") no-repeat transparent -16px 173px;
+        }
+      }
+    }
+  }
+}
+section#join_contest {
+  padding-top: 28px;
+  background: url(../images/joincontest_bg.png) no-repeat top center;
+  .row {
+    margin-left: 4.3%;
+  }
+  .sub-head {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  button {
+    margin-top: 18px;
+  }
+}
+section#behind-scenes {
+  padding-top: 76px;
+  .section-subhead {
+    margin-top: 12px;
+  }
+  .video {
+    margin-top: 42px;
+  }
+}
+section#sponsors {
+  padding-top: 40px;
+  .sponsors {
+    margin-top: 60px;
+  }
+  .sponsor {
+    width: 160px;
+    height: 98px;
+    vertical-align: middle;
+    img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.sub-head {
+  color: $base;
+  font-size: 52px;
+  line-height: 68px;
+  font-weight: $fontWeightBold;
+}
+.description {
+  margin-top: 14px;
+  color: $gray-lighter;
+  font-size: 18px;
+  line-height: 28px;
+}

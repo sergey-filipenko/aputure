@@ -1,0 +1,80 @@
+include ../views/mixins
+append styles
+  link(href="images/favicon.png" rel="shortcut icon"  type="image/png")
+  link(href="bootstrap/css/bootstrap.css", rel="stylesheet")
+  link(href="font-awesome/css/font-awesome.min.css", rel="stylesheet")
+  link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700", rel="stylesheet", type='text/css')
+  // Custom styles for this template 
+  link(href="css/main.css", rel="stylesheet")
+  
+body#page-top
+  nav.navbar.navbar-expand-lg.navbar-light.fixed-top#mainNav
+    .container
+      a(class="navbar-brand js-scroll-trigger", href="/")
+        img(src="images/logo.png" alt="Lights en Location")
+      button(class="navbar-toggler navbar-toggler-right", type="button", data-toggle="collapse", data-target="#navbarResponsive", aria-controls="navbarResponsive", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbarResponsive
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a(class={active: page === "prizes"} class="nav-link" href="/prizes") Prizes 
+          li.nav-item
+            a(class={active: page === "faq"} class="nav-link" href="/faq") FAQ
+          li.nav-item
+            a(class={"active": page == "judges"} class="nav-link" href="/judges") Judges
+          li.nav-item
+            a(class={active: page === "sponsors"} class="nav-link" href="/sponsors") Sponsors
+          li.nav-item
+            a(class={active: page === "contacts"} class="nav-link" href="/contacts") Contact Us
+          li.nav-item
+            a(class={active: page === "toc"} class="nav-link" href="/toc") Terms & Conditions
+
+  block navigation
+  block body
+footer
+  .container
+    .row
+      .col-lg-6
+        nav.navbar.navbar-expand-lg
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a(class={active: page === "prizes"} class="nav-link" href="/prizes") Prizes
+            li.nav-item
+              a(class={active: page === "faq"} class="nav-link" href="/faq") FAQ
+            li.nav-item
+              a(class={active: page === "judges"} class="nav-link" href="/judges") Judges
+            li.nav-item
+              a(class={active: page === "sponsors"} class="nav-link" href="/sponsors") Sponsors
+            li.nav-item
+              a(class={active: page === "contacts"} class="nav-link" href="/contacts") Contact Us
+            li.nav-item
+              a(class={active: page === "toc"} class="nav-link" href="/toc") Terms & Conditions
+
+      .col-lg-6
+        .navbar.navbar-expand-lg
+          ul.navbar-nav.ml-auto.float-right
+            li.nav-item.social-link
+              a(class="facebook" href="https://www.facebook.com/Aputure/") Facebook
+            li.nav-item.social-link
+              a(class="instagram" href="https://www.instagram.com/aputuretech/") Instagram
+            li.nav-item.social-link
+              a(class="youtube" href="https://cdn.shopify.com/s/files/1/1343/1935/files/icon-youtube_088ba82a-0d28-48bb-8b34-e97979674933.png?18401632118728387659") YouTube
+            li.nav-item.social-link
+              a(class="twitter" href="https://twitter.com/aputuretech") Twitter
+    .row
+      .col-sm-12.feedback Feedback on web experience? #[a(class="text-red" href="/contacts") Click here]
+    .row
+      .col-sm-12
+        .copy Copyright &copy; 2008-2022 Aputure Imaging Industries Co. Ltd. All rights reserved.
+
+
+append scripts
+    script(src="../jquery/jquery.js")
+    script(src="../popper/popper.js")
+    script(src="../magnific-popup/jquery.magnific-popup.js")
+    script(src="../bootstrap/js/bootstrap.js")
+    script(src="../js/main.js")
+
+block scripts
+
+

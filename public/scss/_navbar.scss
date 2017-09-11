@@ -1,0 +1,122 @@
+// Styling for the navbar
+#mainNav {
+  border-color: fade-out($gray-darker, .95);
+  background-color: rgba(85, 85, 85, 0.3);;
+  @include serif-font;
+  @include transition-all;
+  .navbar-brand {
+    font-weight: 700;
+    color: $theme-primary;
+    @include serif-font;
+    &:focus,
+    &:hover {
+      color: darken($theme-primary, .1);
+    }
+  }
+  .navbar-toggle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $gray-base;
+  }
+  
+  .navbar-nav {
+    > li.nav-item {
+      > a.nav-link:focus,
+      > a.nav-link {
+        padding: 0 0 0 38px;
+        font-size: 14px;	
+        line-height: 18px;
+        color: $base;
+        &:hover {
+          color:  $theme-primary;
+        }
+        &.active {
+          color: $theme-primary !important;
+          text-transform: none;
+          background-color: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  margin-top: 25px;
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+    .nav-link {
+      color: $gray-lighter;
+      font-size: 12px;
+      line-height: 15px;
+      padding-left: 0;
+      padding-right: 27px;
+      &:hover {
+        color: $theme-primary;
+      }
+      &.active {
+        color: $theme-primary !important;
+      }
+    }
+  }
+  .social-link {
+    padding-left: 36px;
+    padding-right: 0;
+    a {
+      padding-left: 28px;
+      color: $gray-lighter;
+      font-size: 12px;
+      line-height: 15px;
+      &.facebook {
+        background: url("../images/social/facebook.png") no-repeat transparent left center;
+        &:hover {
+          background-image: url("../images/social/facebook_active.png");
+        }
+      }
+      &.instagram {
+        background: url("../images/social/instagram.png") no-repeat transparent left center;
+        &:hover {
+          background-image: url("../images/social/instagram_active.png");
+        }
+      }
+      &.youtube {
+        background: url("../images/social/youtube.png") no-repeat transparent left center;
+        &:hover {
+          background-image: url("../images/social/youtube_active.png");
+        }
+      }
+      &.twitter {
+        background: url("../images/social/twitter.png") no-repeat transparent left center;
+        &:hover {
+          background-image: url("../images/social/twitter_active.png");
+        }
+      }
+      &:hover {
+        color:  $theme-primary;
+      }
+      
+    }
+    
+  }
+  .feedback {
+    font-size: 11px;
+    line-height: 14px;
+    margin-top: 12px;
+    color: $gray-light;
+    a {
+      font-size: 11px;
+    }
+  }
+  .copy {
+    border-top: 1px solid $gray-light;
+    font-size: 11px;
+    line-height: 14px;
+    margin-top: 10px;
+    padding-top: 10px;
+    color: $gray-light;
+  }
+}
+  
