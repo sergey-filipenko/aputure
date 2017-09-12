@@ -2,15 +2,62 @@
   padding-top: 0;
   .judge {
     margin-top: 60px;
+    padding-bottom: 12px;
+    @media (min-width: 992px) {
+      .right-col {
+        padding-left: 68px;
+      }
+    }
     .name {
       color: $theme-primary;
       font-size: 36px;
       line-height: 44px;
     }
     .info {
+      margin-top: 10px;
       font-size: 18px;
       line-height: 28px;
       color: $base;
+    }
+    .description {
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .social {
+      margin-top: 30px;
+      li {
+        margin-right: 18px;
+      }
+      a {
+        display: inline-block;
+        width: 20px;
+        height: 16px;
+        &.facebook {
+          background: url("../images/social/facebook.png") no-repeat transparent left center;
+          &:hover {
+            background-image: url("../images/social/facebook_active.png");
+          }
+        }
+        &.vimeo {
+          background: url("../images/social/vimeo.png") no-repeat transparent left center;
+          &:hover {
+            background-image: url("../images/social/vimeo_active.png");
+          }
+        }
+        &.twitter {
+          background: url("../images/social/twitter.png") no-repeat transparent left center;
+          &:hover {
+            background-image: url("../images/social/twitter_active.png");
+          }
+        }
+        &.instagram {
+          background: url("../images/social/instagram.png") no-repeat transparent left center;
+          &:hover {
+            background-image: url("../images/social/instagram_active.png");
+          }
+        }
+      }
     }
   }
 }

@@ -446,15 +446,48 @@ section#sponsors {
 #judges {
   padding-top: 0; }
   #judges .judge {
-    margin-top: 60px; }
+    margin-top: 60px;
+    padding-bottom: 12px; }
+    @media (min-width: 992px) {
+      #judges .judge .right-col {
+        padding-left: 68px; } }
     #judges .judge .name {
       color: #D02A38;
       font-size: 36px;
       line-height: 44px; }
     #judges .judge .info {
+      margin-top: 10px;
       font-size: 18px;
       line-height: 28px;
       color: #fff; }
+    #judges .judge .description {
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 24px; }
+    #judges .judge .social {
+      margin-top: 30px; }
+      #judges .judge .social li {
+        margin-right: 18px; }
+      #judges .judge .social a {
+        display: inline-block;
+        width: 20px;
+        height: 16px; }
+        #judges .judge .social a.facebook {
+          background: url("../images/social/facebook.png") no-repeat transparent left center; }
+          #judges .judge .social a.facebook:hover {
+            background-image: url("../images/social/facebook_active.png"); }
+        #judges .judge .social a.vimeo {
+          background: url("../images/social/vimeo.png") no-repeat transparent left center; }
+          #judges .judge .social a.vimeo:hover {
+            background-image: url("../images/social/vimeo_active.png"); }
+        #judges .judge .social a.twitter {
+          background: url("../images/social/twitter.png") no-repeat transparent left center; }
+          #judges .judge .social a.twitter:hover {
+            background-image: url("../images/social/twitter_active.png"); }
+        #judges .judge .social a.instagram {
+          background: url("../images/social/instagram.png") no-repeat transparent left center; }
+          #judges .judge .social a.instagram:hover {
+            background-image: url("../images/social/instagram_active.png"); }
 
 .text-primary {
   color: #D02A38 !important; }
