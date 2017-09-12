@@ -1,6 +1,27 @@
 extends ../layouts/default
 append body
+  +breadcrumb("Contact Us")
+  section#contact_us.content
+
     .container
-        h1= title
-        p Welcome to #{title}
-    h1 Rajasegar
+      .row
+        .col-sm-12.page-header Have a question? Idea?#[br]Comment?#[br]#[span.text-red Hit us up anytime]
+      form(method="POST")
+        fieldset
+          .row
+            .col-sm-12.col-lg-10.d-flex.justify-content-between.two-cols
+              .form-group
+                input(type="text" class="form-control form-control-lg" placeholder="Your name*")
+              .form-group
+                input(type="email" class="form-control form-control-lg" placeholder="Email address *")
+            .col-sm-12.col-lg-10.d-flex.justify-content-between.two-cols
+              .form-group
+                input(type="text" class="form-control form-control-lg" placeholder="Phone number (Optional)")
+              .form-group
+                input(type="text" class="form-control form-control-lg" placeholder="Title of Entry (Optional)")
+          .row
+            .col-sm-12.col-lg-10.form-group
+              textarea(class="form-control" rows="6" placeholder="Type what you want to say to us")
+          .row
+            .col-sm-12.col-lg-10.form-group
+              button(type="submit" class="btn btn-danger btn-lg") Submit Now

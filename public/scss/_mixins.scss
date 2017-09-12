@@ -64,3 +64,21 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+@mixin placeholder($size, $color) {
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: $size;
+    color: $color;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: $size;
+    color: $color;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: $size;
+    color: $color;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size: $size;
+    color: $color;
+  }
+}

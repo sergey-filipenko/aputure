@@ -139,7 +139,7 @@ section.content {
       font-size: 14px;
       line-height: 22px; }
     .tooltip.show .tooltip-inner p {
-      color: #333333; }
+      color: #282828; }
 
 .arrow-red {
   background: url("../images/buttonarrow.png") no-repeat transparent center center;
@@ -522,6 +522,44 @@ section#sponsors {
     line-height: 24px; }
   #page_sponsors .sponsor .link {
     margin-top: 30px; }
+
+#contact_us .page-header {
+  font-size: 52px;
+  line-height: 68px; }
+
+#contact_us form {
+  margin-top: 80px; }
+
+#contact_us .two-cols .form-group {
+  width: 435px; }
+  #contact_us .two-cols .form-group .form-control {
+    height: 60px;
+    width: 435px; }
+
+#contact_us .form-control {
+  border-radius: 4px;
+  background-color: #282828;
+  color: #fff;
+  font-weight: 500; }
+  #contact_us .form-control::-webkit-input-placeholder {
+    /* WebKit browsers */
+    font-size: "12px";
+    color: #b5b5b5; }
+  #contact_us .form-control:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-size: "12px";
+    color: #b5b5b5; }
+  #contact_us .form-control::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-size: "12px";
+    color: #b5b5b5; }
+  #contact_us .form-control:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    font-size: "12px";
+    color: #b5b5b5; }
+
+#contact_us button:hover {
+  cursor: pointer; }
 
 .text-primary {
   color: #D02A38 !important; }

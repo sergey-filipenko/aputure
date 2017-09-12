@@ -1,0 +1,31 @@
+#contact_us {
+  .page-header {
+    font-size: 52px;
+    line-height: 68px;
+  }
+  form {
+    margin-top: 80px;
+  }
+  .two-cols {
+    .form-group {
+      width: 435px;
+      .form-control {
+        height: 60px;
+        width: 435px;
+      }
+    }
+  }
+  .form-control {
+    @include placeholder("12px", $gray-lighter);
+    border-radius: 4px;
+    background-color: $gray-dark;
+    color: $base;
+    font-weight: 500;
+  }
+  button {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}
