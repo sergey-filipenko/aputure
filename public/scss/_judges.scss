@@ -8,6 +8,9 @@
         padding-left: 68px;
       }
     }
+    img {
+      max-width: 100%;
+    }
     .name {
       color: $theme-primary;
       font-size: 36px;

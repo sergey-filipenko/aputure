@@ -1,6 +1,115 @@
 extends ../layouts/default
+
 append body
+  +breadcrumb("FAQ")
+  section#faq.content
     .container
-        h1= title
-        p Welcome to #{title}
-    h1 Faq
+      .row
+        .col-sm-12.sub-head Frequently asked Questions
+      .row
+        .col-sm-12.col-lg-10
+          #accordion(role="tablist" aria-multiselectable="true")
+            .card
+              #faqLabel1.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq1" aria-expanded="false") What are the requirements of entry for Lights on Location 2017?
+              #faq1.collapse(role="tabpanel" aria-labelledby="faqLabel1")
+                .card-block Entrants must create and produce an original short film of a maximum of 60 seconds in duration. A behind-the-scenes component of at least one minute in length has to be broadcast on Facebook live with the hashtag #[span.text-red #LightsOnLocation] and also tagging the companies #[span.text-red @Aputure] and #[span.text-red #Wrapal]. The entrant must then submit their final 60 second video to the competition via Facebook.
+
+            .card
+              #faqLabel2.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq2" aria-expanded="true") What does the film need to be shot on?
+              #faq2.collapse(role="tabpanel" aria-labelledby="faqLabel2")
+                .card-block It's up to you! We encourage you to shoot on digital purely for ease of use and editing, but if you want to shoot on film or any other medium, go for it!
+
+            .card
+              #faqLabel3.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq3" aria-expanded="false") What qualifies as "one light"? Can I use different lights for each shot for my movie?
+
+              #faq3.collapse(role="tabpanel" aria-labelledby="faqLabel3")
+                .card-block Any studio or work light will count as the one light that you are allowed to use. It does not need to be an Aputure light, but you must use this same light for the entire film and cannot change it with another light at any point during production. #[br]That said, lighting modifiers such as bounce boards, soft boxes, silks, flags, etc. are allowed in any number and do not count towards your single light total. Likewise, practical lights such as desk lamps, street lights, chandeliers, pre-installed fluorescents, etc. are also allowed in any number as well. These must reasonably be a part of your location though and cannot be removed and manipulated to light scenes that they do not belong in. 
+
+            .card
+              #faqLabel4.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq4" aria-expanded="false") What qualifies as "one location"? Can I use different parts of the same location for my movie? 
+              #faq4.collapse(role="tabpanel" aria-labelledby="faqLabel4")
+                .card-block Your entire production must take place either indoors or outdoors. If it is indoors, your must keep your entire film within one physical location, but are welcome to use any part of that space whether that be the bedroom, waiting room or captain's quarters. If it is outdoors, you must keep your film to one element of scenery such as a forest, desert or Dawson's Creek.#[br] Regardless of where you choose, you will have to define your location with your submission and it should look the same throughout the entire film. Stages with multiple sets or extensive green screen work are not allowed. Brownie points will be awarded to films that can stay within the same room or at a single geographical point.
+
+            .card
+              #faqLabel5.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq5" aria-expanded="false") Does it cost anything so submit?
+              #faq5.collapse(role="tabpanel" aria-labelledby="faqLabel5")
+                .card-block Apart from your time, not at all.
+
+            .card
+              #faqLabel6.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq6" aria-expanded="false") Can I enter more than one film?
+              #faq6.collapse(role="tabpanel" aria-labelledby="faqLabel6")
+                .card-block As long as they abide by the rules spelt out - Absolutely!
+             
+            .card
+              #faqLabel7.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq7" aria-expanded="false") Do I have to use an Aputure light or Wrapal location to enter?
+              #faq7.collapse(role="tabpanel" aria-labelledby="faqLabel7")
+                .card-block No but it would be nice!
+ 
+            .card
+              #faqLabel8.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq8" aria-expanded="false") What happens if I go over the one minute entry limit?
+              #faq8.collapse(role="tabpanel" aria-labelledby="faqLabel8")
+                .card-block You are still welcome to submit but only the first 60 seconds of your entry will be factored into the judging process.
+
+            .card
+              #faqLabel9.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq9" aria-expanded="false") When is the last day to submit my film?
+              #faq9.collapse(role="tabpanel" aria-labelledby="faqLabel9")
+                .card-block The Facebook Live and actual entry submission have to be received no later than 11:59 PM on November 15th 2017.
+
+            .card
+              #faqLabel10.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq10" aria-expanded="false") Are there any themes or topics that my entry should follow?
+              #faq10.collapse(role="tabpanel" aria-labelledby="faqLabel10")
+                .card-block There are no themes or key topics that your short film needs to follow. The concept and story of your short film is totally up to you but no lewd or pornographic imagery or content inciting hate, discrimination or religious strife will be accepted.
+                  
+            .card
+              #faqLabel11.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq11" aria-expanded="false") What should my Behind the Scenes Facebook Live video be about?
+              #faq11.collapse(role="tabpanel" aria-labelledby="faqLabel11")
+                .card-block Be yourself! We'd love to know more about you, what your production is about, and how you're going about shooting on just one location with one light. Also, tell us why you're taking part in this competition and why you love doing what you do.
+
+            .card
+              #faqLabel12.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq12" aria-expanded="false") Can I submit an entry that is not in English?
+              #faq12.collapse(role="tabpanel" aria-labelledby="faqLabel12")
+                .card-block Absolutely, just put English subtitles.
+
+            .card
+              #faqLabel13.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq13" aria-expanded="false") Can I submit a short film made recently?
+              #faq13.collapse(role="tabpanel" aria-labelledby="faqLabel13")
+                .card-block As long as it meets the requirements of this competition and the Facebook Live component can be re-created.
+
+            .card
+              #faqLabel14.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq14" aria-expanded="false") Are there any countries that are excluded from Lights On Location?
+              #faq14.collapse(role="tabpanel" aria-labelledby="faqLabel14")
+                .card-block The Competition is free to enter and open to anyone from any country. Minors (anyone under 18) are entitled to enter the Competition, provided they have the consent of a parent or guardian to enter and participate in the Competition, and provide that parent or guardian's details should they be awarded a prize.
+
+            .card
+              #faqLabel15.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq15" aria-expanded="false") What other terms should I be aware of?
+              #faq15.collapse(role="tabpanel" aria-labelledby="faqLabel15")
+                .card-block To see the full conditions of participation in this competition, please check out our #[a(href="/toc") Terms & Conditions]
+
+            .card
+              #faqLabel16.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq16" aria-expanded="false") What if I miss the deadline by a day or two?
+              #faq16.collapse(role="tabpanel" aria-labelledby="faqLabel16")
+                .card-block 
+                  a(href="/contacts") Contact Us
+
+            .card
+              #faqLabel17.card-header(role="tab")
+                a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#faq17" aria-expanded="false") I'm having difficulties submitting my film, what should I do?
+              #faq17.collapse(role="tabpanel" aria-labelledby="faqLabel17")
+                .card-block
+                  a(href="/contacts") Contact us here!

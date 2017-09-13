@@ -14,7 +14,7 @@ append body
         .col-sm-6.description Less is sometimes best; think you have what it takes to make a video that will  wow the world and win some amazing prizes?
       .row
         .col-sm-2.submit-btn
-          button(type="button" class="btn btn-danger btn-lg") Submit Now 
+          button(type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#submitNowModal") Submit Now 
             
   section#how-to-join
     .container
@@ -76,7 +76,7 @@ append body
         .col-sm-8.section-head Here's is a Sample Entry by #[span.text-red Max Honcharov]
       .row
         .col-sm-12.embed-responsive.embed-responsive-16by9
-          iframe(class="col-sm-12" frameborder="0" src="https://www.youtube.com/embed/CevxZvSJLk8")
+          iframe(class="col-sm-12" frameborder="0" src="https://www.youtube.com/embed/CBEL5qfP6qI")
           
   section#info
     .container
@@ -124,7 +124,7 @@ append body
         .col-sm-8.section-subhead Sample Behind the Scenes video by Brian L Tan
       .row
           .col-sm-12.video.embed-responsive.embed-responsive-16by9
-            iframe(class="col-sm-12" frameborder="0" src="https://www.youtube.com/embed/_QqCu0ktlhM")
+            iframe(class="col-sm-12" frameborder="0" src="https://www.youtube.com/embed/FSoFtczxNu0")
           
           
   section#sponsors
@@ -152,5 +152,54 @@ append body
           .sponsor
             img(src="images/sponsors/kesslercrane.png" alt="Kessler Crane")
 
-          
+  #submitNowModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="submitNowModalLabel" aria-hidden="true")
+    .modal-dialog(role="document")
+      .modal-content
+        .modal-header
+          .container
+            .row
+              .col-lg-4.col-sm-12.header-part.begin Competition Begins: #[br] #[b September 30th 2017]
+              .col-lg-4.col-sm-12.header-part.ends Competition Ends: #[br] #[b November 15th 2017]
+              .col-lg-4.float-lg-right
+                button.close(type="button" data-dismiss="modal" aria-label="Close")
+                  span(aria-hidden="true") &times;
+        .modal-body
+          .container
+            .row
+              .col-sm-12.header All it takes is 3 simple steps!
+            .row.steps
+              .col-sm-12.d-flex.justify-content-between
+                .step
+                  .row
+                    .col-sm-12
+                      img(src="images/step1.png")
+                  .row.title
+                    .col-sm-12 Step 1
+                  .row.description
+                    .col-sm-12 Make a 1 min video. One light. One location.
+                .step
+                  .row
+                    .col-sm-12
+                      img(src="images/step2.png")
+                  .row.title
+                    .col-sm-12 Step 2
+                  .row.description
+                    .col-sm-12 Broadcast a Facebook Live Behind the Scenes video and tag #[span.text-red #LightsOnLocation] and companies #[span.text-red @Aputure] and #[span.text-red @Wrapal]
+                .step
+                  .row
+                    .col-sm-12
+                      img(src="images/step3.png")
+                  .row.title
+                    .col-sm-12 Step 3
+                  .row.description
+                    .col-sm-12 After editing, submit your final entry to us via Facebook
+
+        .modal-footer
+          .container
+            .row
+              .col-sm-12 In the meantime, check out our #[a(href="#" target="blank") sample videos], #[a(href="/judges" target="blank") the judges] watching each entry, and the amazing #[a(href="/prizes" target="blank") prizes] at stake!
+            .row
+              .col-lg-12.text-center
+                a(class="mx-auto btn btn-danger btn-xl" target="blank" href="https://www.facebook.com/Aputure/") Submit Now 
+  
     

@@ -1,0 +1,37 @@
+#faq {
+  .sub-head {
+    font-size: 44px;
+    line-height: 54px;
+    margin-bottom: 38px;
+  }
+  .card {
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: $gray-darker;
+    .card-header {
+      padding: 20px 0 20px 0;
+      border: none;
+    }
+    
+    .card-header > a {
+      color: $theme-primary;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 500;
+      background: url("../images/dropdown_active.png") no-repeat transparent 30px center;
+      &.collapsed {
+        background: url("../images/dropdown.png") no-repeat transparent 30px center;
+        color: $base;
+      }
+    }
+    .card-block {
+      color: $base;
+      padding-bottom: 20px;
+    }
+    .card-block, a[data-toggle="collapse"] {
+      padding-left: 62px;
+      padding-right: 130px;
+      display: inline-block;
+    }
+  }
+}
