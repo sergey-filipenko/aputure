@@ -4,90 +4,119 @@
   min-height: 800px;
   position: relative;
   background: url(../images/photo_background.png) no-repeat top center;
+  @media (max-width: 576px) {
+    padding-bottom: 24rem;
+    background-position: 72% bottom;
+    background-size: auto;
+  }
   background-size: auto 100%;
   .main-banner
     .sub-head{
-      margin-top: 32px;
+      margin-top: 2rem;
     }  
     .red-title {
-      margin-top: 187px;  
+      margin-top: 11.6rem;
+      @media (max-width: 576px) {
+        margin-top: 5rem;
+      }
       color: $theme-primary;
-      font-size: 36px;
+      font-size: 2.25rem;
       font-weight: $fontWeightBold;
-      line-height: 44px;
+      line-height: 2.75rem;
     }
     .submit-btn {
-      margin-top: 62px;
+      margin-top: 3.85rem;
+      @media (max-width: 576px) {
+        margin-top: 2rem;
+      }
       button {
+        @media (max-width: 576px) {
+          display: block;
+          width: 100%;
+        }
         cursor: pointer;
       }
     }
 }
 section#how-to-join {
-  padding-top: 82px;
+  padding-top: 5.12rem;
   .steps {
     .step {
       width: 320px;
+      @media (max-width: 576px) {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
     }
     .title {
       color: $base;
       font-weight: $fontWeightBold;
-      font-size: 22px;
-      line-height: 27px;
-      margin-top: 30px;
+      font-size: 1.375rem;
+      line-height: 1.68rem;
+      margin-top: 1.87rem;
     }
     .description {
       color: $gray-lighter;
-      font-size: 16px;
-      line-height: 26px;
-      margin-top: 11px;
+      font-size: 1rem;
+      line-height: 1.625rem;
+      margin-top: 0.69rem;
     }
-    margin-top: 58px;
+    margin-top: 3.6rem;
   }
 }
 section#countdown {
-  padding-top: 106px;
+  padding-top: 6.6rem;
   background: url(../images/circle.png) no-repeat 78% top;
   #js-countdown {
-    margin-top: 60px;
+    margin-top: 3.75rem;
     .countdown-column {
-      width:185px;
+      width: 11.56rem;
       .countdown-value {
         color: $theme-primary;
-        font-size: 144px;
+        font-size: 9rem;
         font-weight: $fontWeightBold;
-        line-height: 175px;
+        line-height: 11rem;
         text-align: center;
+      }
+      @media (max-width: 576px) {
+        width: 10rem;
+        .countdown-value {
+          font-size: 8rem;
+          line-height: 11rem;
+        }
       }
       .countdown-label {
         border-top: 2px solid white;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 1.37rem;
+        line-height: 1.69rem;
         text-align: center;
         color: $base;
-        padding-top: 10px;
+        padding-top: 0.625rem;
       }
     }
   }
 }
 section#entry {
-  padding-top: 82px;
+  padding-top: 5.12rem;
 }
 section#info {
-  padding-top: 67px;
-  padding-bottom: 30px;
+  padding-top: 4.2rem;
+  padding-bottom: 1.87rem;
   .content {
     background-color: #1A181B;
-    padding-left: 30px;
+    padding-left: 1.87rem;
     .sub-head {
-      margin-top: -24px;
+      margin-top: -1.5rem;
     }
     .link {
-      margin-top: 34px;
+      margin-top: 2.125rem;
       .arrow-red {
         background: url('../images/buttonarrow.png') no-repeat transparent center center;
         display: inline-block;
-        width: 20px;
+        width: 1.25rem;
       }
     }
     .image {
@@ -98,46 +127,59 @@ section#info {
         height: 450px;
         width:100%;
         &.img-prizes {
-          background: url("../images/prizes.png") no-repeat transparent -17px 65px;
+          background: url("../images/prizes.png") no-repeat transparent -1rem 4rem;
         }
         &.img-judges {
-          background: url("../images/judges.png") no-repeat transparent -16px 173px;
+          background: url("../images/judges.png") no-repeat transparent -1rem 11rem;
         }
       }
     }
   }
 }
 section#join_contest {
-  padding-top: 28px;
+  padding-top: 1.75rem;
   background: url(../images/joincontest_bg.png) no-repeat top center;
+  @media (max-width: 576px) {
+    background-position: -10rem center;
+  }
   .row {
-    margin-left: 4.3%;
+    @media (min-width: 576px) {
+      margin-left: 4.3%;
+    }
+    @media (max-width: 576px) {
+      .sub-head {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      button {
+        width: 100%;
+        margin-top: 1.125rem;
+      }
+    }
   }
   .sub-head {
-    font-size: 44px;
-    line-height: 54px;
+    font-size: 2.75rem;
+    line-height: 3.37rem;
   }
   button {
-    margin-top: 18px;
+    margin-top: 1.125rem;
   }
 }
 section#behind-scenes {
-  padding-top: 76px;
+  padding-top: 4.75rem;
   .section-subhead {
-    margin-top: 12px;
+    margin-top: 0.75rem;
   }
   .video {
-    margin-top: 42px;
+    margin-top: 2.625rem;
   }
 }
+
 section#sponsors {
-  padding-top: 40px;
-  .sponsors {
-    margin-top: 60px;
-  }
+  padding-top: 2.5rem;
   .sponsor {
-    width: 160px;
-    height: 98px;
+    height: 6.125rem;
+    width: 10rem;
     vertical-align: middle;
     img {
       position: relative;
@@ -149,50 +191,74 @@ section#sponsors {
 
 .sub-head {
   color: $base;
-  font-size: 52px;
-  line-height: 68px;
+  font-size: 3.25rem;
+  line-height: 4.25rem;
   font-weight: $fontWeightBold;
 }
 .description {
-  margin-top: 14px;
+  margin-top: 0.875rem;
   color: $gray-lighter;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .modal-dialog {
   max-width: 820px;
   .modal-header {
+    @media (max-width: 576px) {
+      padding: 1rem;
+    }
     padding: 20px 20px 20px 90px;
     .close {
-      font-size: 75px;
+      font-size: 4.7rem;
       font-weight: 100;
-      line-height: 24px;
+      line-height: 1.5rem;
       cursor: pointer;
     } 
     .header-part {
-      font-size: 12px;
-      line-height: 20px;
-      padding-left: 40px;
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      padding-left: 2.5rem;
       &.begin {
         background: url(../images/begin_icon.png) no-repeat left center;
       }
       &.ends {
         background: url(../images/ends_icon.png) no-repeat left center;
       }
+      @media (max-width: 576px) {
+        font-size: 1rem;
+        &.begin {
+          margin-top: 2.5rem;
+        }
+        &.button {
+          margin-top: -7.5rem;
+        }
+      }
+
     }
   }
   .modal-body {
-    padding: 30px 75px 30px 90px;
+    padding: 2rem 4.7rem 2rem 5.6rem;
+    @media (max-width: 576px) {
+      padding: 1rem;
+    }
     .header {
-      font-size: 24px;
-      line-height: 26px;
-      margin-bottom: 22px;
+      font-size: 1.5rem;
+      line-height: 1.625rem;
+      margin-bottom: 1.375rem;
     }
     .step {
+      @media (max-width: 576px) {
+        width: 100%;
+        .description {
+          margin-top: 0;
+          margin-bottom: 2rem;    
+        }
+      }
+
       width: 180px;
       .description {
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
       }
       img {
         max-width: 100%;
@@ -200,16 +266,19 @@ section#sponsors {
     }
   }
   .modal-footer {
-    padding: 30px 90px;
+    padding: 2rem 4rem;
+    @media (max-width: 576px) {
+      padding: 1rem;
+    }
     color: $gray-darker;
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
     a {
-      font-size: 14px;
-      line-height: 26px;
+      font-size: 0.875rem;
+      line-height: 1.625rem;
       &.btn {
-        padding: 20px 74px;
-        margin-top: 20px;
+        padding: 1.25rem 4.625rem;
+        margin-top: 1.25rem;
         text-transform: uppercase;
       }
     }

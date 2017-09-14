@@ -1,5 +1,6 @@
 include ../views/mixins
 append styles
+  meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
   link(href="images/favicon.png" rel="shortcut icon"  type="image/png")
   link(href="bootstrap/css/bootstrap.css", rel="stylesheet")
   link(href="font-awesome/css/font-awesome.min.css", rel="stylesheet")
@@ -8,7 +9,7 @@ append styles
   link(href="css/main.css", rel="stylesheet")
   
 body#page-top
-  nav.navbar.navbar-expand-lg.navbar-light.fixed-top#mainNav
+  nav.navbar.navbar-expand-lg.navbar-dark.fixed-top#mainNav
     .container
       a(class="navbar-brand js-scroll-trigger", href="/")
         img(src="images/logo.png" alt="Lights en Location")
@@ -34,9 +35,9 @@ body#page-top
 footer
   .container
     .row
-      .col-lg-6
-        nav.navbar.navbar-expand-lg
-          ul.navbar-nav.mr-auto
+      .col-lg-6.col-sm-12
+        nav.navbar.navbar-expand-sm
+          ul.navbar-nav.mr-auto.flex-wrap
             li.nav-item
               a(class={active: page === "prizes"} class="nav-link" href="/prizes") Prizes
             li.nav-item
@@ -50,9 +51,9 @@ footer
             li.nav-item
               a(class={active: page === "toc"} class="nav-link" href="/toc") Terms & Conditions
 
-      .col-lg-6
-        .navbar.navbar-expand-lg
-          ul.navbar-nav.ml-auto.float-right
+      .col-lg-6.col-sm-12
+        .navbar.navbar-expand-sm
+          ul.navbar-nav.ml-auto.float-right.flex-wrap.social-links
             li.nav-item.social-link
               a(class="facebook" href="https://www.facebook.com/Aputure/") Facebook
             li.nav-item.social-link

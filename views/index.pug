@@ -6,57 +6,59 @@ append body
   section#intro
     .container.main-banner
       .row
-        .col-sm-12.red-title Lights on Location: 2017
+        .col-sm-12
+          h1.red-title Lights on Location: 2017
       .row
-        .col-sm-7.sub-head One minute. One light. One location.
+        .col-sm-7
+          h2.sub-head One minute. One light. One location.
           
       .row
-        .col-sm-6.description Less is sometimes best; think you have what it takes to make a video that will  wow the world and win some amazing prizes?
+        .col-lg-6.col-sm-12.description Less is sometimes best; think you have what it takes to make a video that will  wow the world and win some amazing prizes?
       .row
-        .col-sm-2.submit-btn
+        .col-sm-12.col-lg-2.submit-btn
           button(type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#submitNowModal") Submit Now 
-            
   section#how-to-join
     .container
       .row
-        .col-sm-12.section-head How to join
+        .col-sm-12
+          h1.section-head How to join
       .row
-        .col-sm-12.section-head.color-red #Lights on Location
-      .row.steps
-        .col-sm-12.d-flex.justify-content-between
-          .step
-            .row
-              .col-sm-12
-                img(src="images/step1.png")
-            .row.title
-              .col-sm-12 Step 1
-            .row.description
-              .col-sm-12 Make a 1 min video. One light. One location.
-  
-          .step
-            .row
-              .col-sm-12
-                img(src="images/step2.png")
-            .row.title
-              .col-sm-12 Step 2
-            .row.description
-              .col-sm-12 Broadcast a Facebook Live Behind the Scenes video and tag #[span.text-red #LightsOnLocation] and companies #[span.text-red @Aputure] and #[span.text-red @Wrapal]
-      
-          .step
-            .row
-              .col-sm-12
-                img(src="images/step3.png")
-            .row.title
-              .col-sm-12 Step 3
-            .row.description
-              .col-sm-12 After editing, submit your final entry to us via Facebook
+        .col-sm-12
+          h1.section-head.color-red #Lights on Location
+      .steps.d-flex.flex-wrap.flex-row.justify-content-between
+        .step
+          .row
+            .col-sm-12
+              img(src="images/step1.png")
+          .row.title
+            .col-sm-12 Step 1
+          .row.description
+            .col-sm-12 Make a 1 min video. One light. One location.
+
+        .step
+          .row
+            .col-sm-12
+              img(src="images/step2.png")
+          .row.title
+            .col-sm-12 Step 2
+          .row.description
+            .col-sm-12 Broadcast a Facebook Live Behind the Scenes video and tag #[span.text-red #LightsOnLocation] and companies #[span.text-red @Aputure] and #[span.text-red @Wrapal]
+    
+        .step
+          .row
+            .col-sm-12
+              img(src="images/step3.png")
+          .row.title
+            .col-sm-12 Step 3
+          .row.description
+            .col-sm-12 After editing, submit your final entry to us via Facebook
               
-  section#countdown
+  //section#countdown
     .container
       .row
-        .col-sm-7.section-head Competition Begins: September 30th 2017
-      .row#js-countdown
-        .col-sm-12.d-flex.justify-content-between
+        .col-sm-7
+          h1.section-head Competition Begins: September 30th 2017
+      #js-countdown.d-flex.flex-wrap.flex-row.justify-content-between
           .countdown-column
             .countdown-value.js-countdown-days
             .countdown-label Days
@@ -70,21 +72,23 @@ append body
             .countdown-value.js-countdown-seconds
             .countdown-label Seconds
 
-  section#entry
+  //section#entry
     .container
       .row
-        .col-sm-8.section-head Here's is a Sample Entry by #[span.text-red Max Honcharov]
+        .col-sm-8
+          h1.section-head Here's is a Sample Entry by #[span.text-red Max Honcharov]
       .row
         .col-sm-12.embed-responsive.embed-responsive-16by9
           iframe(class="col-sm-12" frameborder="0" src="https://www.youtube.com/embed/CBEL5qfP6qI")
           
-  section#info
+  //section#info
     .container
       .row
         .col-sm-6
           .content
             .row
-              .col-sm-12.sub-head #[span.text-red $500,000] in #[br]Prizes to be won
+              .col-sm-12
+                h2.sub-head #[span.text-red $500,000] in #[br]Prizes to be won
             .row
               .col-sm-8.description Incredible filmmaking equipment, experiences and more.
             .row.link
@@ -97,7 +101,8 @@ append body
         .col-sm-6
           .content
             .row
-              .col-sm-12.sub-head Judges to #[br]impress
+              .col-sm-12
+                h1.sub-head Judges to #[br]impress
             .row
               .col-sm-8.description A panel of actors, filmmakers and industry experts.
             .row.link
@@ -113,15 +118,17 @@ append body
       .row
         .col-sm-12.sub-head Join the contest
       .row
-        .col-sm-2.submit-btn
+        .col-lg-2.col-sm-12.submit-btn
           button(type="button" class="btn btn-danger btn-lg") Submit Now 
          
   section#behind-scenes
     .container
       .row
-        .col-sm-8.section-head Behind the scenes
+        .col-sm-8
+          h1.section-head Behind the scenes
       .row
-        .col-sm-8.section-subhead Sample Behind the Scenes video by Brian L Tan
+        .col-sm-8
+          h2.section-subhead Sample Behind the Scenes video by Brian L Tan
       .row
           .col-sm-12.video.embed-responsive.embed-responsive-16by9
             iframe(class="col-sm-12" frameborder="0" src="https://www.youtube.com/embed/FSoFtczxNu0")
@@ -130,27 +137,26 @@ append body
   section#sponsors
     .container
       .row
-        .col-sm-12.sub-head Our Sponsors
-      .row.sponsors
-        .col-sm-12.d-flex.justify-content-between
-          .sponsor
-            img(src="images/sponsors/redgiant.png" alt="Red Giant")
-          .sponsor
-            img(src="images/sponsors/paralinx.png" alt="Paralinx")
-          .sponsor
-            img(src="images/sponsors/joby.png" alt="Joby")
-          .sponsor
-            img(src="images/sponsors/musicbed.png" alt="Musicbed")
-      .row.sponsors
-        .col-sm-12.d-flex.justify-content-between
-          .sponsor
-            img(src="images/sponsors/aphex.png" alt="Aphex")
-          .sponsor
-            img(src="images/sponsors/lowepro.png" alt="Lowepro")
-          .sponsor
-            img(src="images/sponsors/miller.png" alt="Miller")
-          .sponsor
-            img(src="images/sponsors/kesslercrane.png" alt="Kessler Crane")
+        .col-sm-12
+          h1.sub-head Our Sponsors
+      .sponsors.d-flex.flex-wrap.flex-row.justify-content-between
+        .sponsor
+          img(src="images/sponsors/redgiant.png" alt="Red Giant")
+        .sponsor
+          img(src="images/sponsors/paralinx.png" alt="Paralinx")
+        .sponsor
+          img(src="images/sponsors/joby.png" alt="Joby")
+        .sponsor
+          img(src="images/sponsors/musicbed.png" alt="Musicbed")
+      .sponsors.d-flex.flex-wrap.flex-row.justify-content-between          
+        .sponsor
+          img(src="images/sponsors/aphex.png" alt="Aphex")
+        .sponsor
+          img(src="images/sponsors/lowepro.png" alt="Lowepro")
+        .sponsor
+          img(src="images/sponsors/miller.png" alt="Miller")
+        .sponsor
+          img(src="images/sponsors/kesslercrane.png" alt="Kessler Crane")
 
   #submitNowModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="submitNowModalLabel" aria-hidden="true")
     .modal-dialog(role="document")
@@ -160,39 +166,38 @@ append body
             .row
               .col-lg-4.col-sm-12.header-part.begin Competition Begins: #[br] #[b September 30th 2017]
               .col-lg-4.col-sm-12.header-part.ends Competition Ends: #[br] #[b November 15th 2017]
-              .col-lg-4.float-lg-right
+              .col-lg-4.col-sm-12.header-part.button
                 button.close(type="button" data-dismiss="modal" aria-label="Close")
                   span(aria-hidden="true") &times;
         .modal-body
           .container
             .row
               .col-sm-12.header All it takes is 3 simple steps!
-            .row.steps
-              .col-sm-12.d-flex.justify-content-between
-                .step
-                  .row
-                    .col-sm-12
-                      img(src="images/step1.png")
-                  .row.title
-                    .col-sm-12 Step 1
-                  .row.description
-                    .col-sm-12 Make a 1 min video. One light. One location.
-                .step
-                  .row
-                    .col-sm-12
-                      img(src="images/step2.png")
-                  .row.title
-                    .col-sm-12 Step 2
-                  .row.description
-                    .col-sm-12 Broadcast a Facebook Live Behind the Scenes video and tag #[span.text-red #LightsOnLocation] and companies #[span.text-red @Aputure] and #[span.text-red @Wrapal]
-                .step
-                  .row
-                    .col-sm-12
-                      img(src="images/step3.png")
-                  .row.title
-                    .col-sm-12 Step 3
-                  .row.description
-                    .col-sm-12 After editing, submit your final entry to us via Facebook
+            .steps.d-flex.flex-wrap.flex-row.justify-content-between
+              .step
+                .row
+                  .col-sm-12
+                    img(src="images/step1.png")
+                .row.title
+                  .col-sm-12 Step 1
+                .row.description
+                  .col-sm-12 Make a 1 min video. One light. One location.
+              .step
+                .row
+                  .col-sm-12
+                    img(src="images/step2.png")
+                .row.title
+                  .col-sm-12 Step 2
+                .row.description
+                  .col-sm-12 Broadcast a Facebook Live Behind the Scenes video and tag #[span.text-red #LightsOnLocation] and companies #[span.text-red @Aputure] and #[span.text-red @Wrapal]
+              .step
+                .row
+                  .col-sm-12
+                    img(src="images/step3.png")
+                .row.title
+                  .col-sm-12 Step 3
+                .row.description
+                  .col-sm-12 After editing, submit your final entry to us via Facebook
 
         .modal-footer
           .container

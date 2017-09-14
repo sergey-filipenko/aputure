@@ -1,5 +1,6 @@
 // Styling for the navbar
 #mainNav {
+
   border-color: fade-out($gray-darker, .95);
   background-color: rgba(85, 85, 85, 0.3);;
   @include serif-font;
@@ -14,7 +15,7 @@
     }
   }
   .navbar-toggle {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     color: $gray-base;
@@ -24,9 +25,13 @@
     > li.nav-item {
       > a.nav-link:focus,
       > a.nav-link {
-        padding: 0 0 0 38px;
-        font-size: 14px;	
-        line-height: 18px;
+        padding: 0 0 0 2.375rem;
+        @media (max-width: 576px) {
+          padding: 0.3rem;
+          font-size: 1rem;
+        }
+        font-size: 0.84rem; // 0.8rem
+        line-height: 1.125rem;
         color: $base;
         &:hover {
           color:  $theme-primary;
@@ -44,16 +49,28 @@
   }
 }
 footer {
-  margin-top: 25px;
+  margin-top: 1.56rem;
   .navbar {
     padding-left: 0;
     padding-right: 0;
+    @media (max-width: 576px) {
+      .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+      }
+      .social-links {
+        .social-link {
+          width: 45%;
+          padding-left: 0;
+        }
+      }
+    }
     .nav-link {
       color: $gray-lighter;
-      font-size: 12px;
-      line-height: 15px;
+      font-size: 0.75rem;
+      line-height: 0.9rem;
       padding-left: 0;
-      padding-right: 27px;
+      padding-right: 1.68rem;
       &:hover {
         color: $theme-primary;
       }
