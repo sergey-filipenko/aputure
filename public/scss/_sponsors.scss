@@ -1,10 +1,15 @@
 #page_sponsors {
+  @media (max-width: 576px) {
+    padding-bottom: 1rem;  
+  }
   .page-header {
     margin-top: 0;
     margin-bottom: 60px;
   }
   .sponsor {
-    width: 500px;
+    @media (min-width: 576px) {
+      width: 500px;
+    }
     margin-bottom: 62px;
     .image {
       border-radius: 4px;

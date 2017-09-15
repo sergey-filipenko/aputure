@@ -82,6 +82,17 @@ body {
   .section-head.color-red {
     color: #D02A38; }
 
+.sub-head {
+  color: #fff;
+  font-size: 3.25rem;
+  line-height: 4.25rem;
+  font-weight: 500; }
+
+@media (min-width: 576px) {
+  .embed-responsive iframe {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
 .page-header {
   font-size: 44px;
   line-height: 54px;
@@ -90,6 +101,17 @@ body {
   margin-top: 10px; }
   .page-header.color-red {
     color: #D02A38; }
+
+@media (max-width: 576px) {
+  .section-head {
+    font-size: 2rem;
+    line-height: 2.5rem; }
+  .sub-head {
+    font-size: 2rem;
+    line-height: 2.5rem; }
+  .page-header {
+    font-size: 2rem;
+    line-height: 2.5rem; } }
 
 .page-description {
   font-size: 18px;
@@ -339,15 +361,24 @@ section#countdown {
 
 section#entry {
   padding-top: 5.12rem; }
+  @media (max-width: 576px) {
+    section#entry {
+      padding-bottom: 1rem; } }
 
 section#info {
-  padding-top: 4.2rem;
+  padding-top: 2rem;
   padding-bottom: 1.87rem; }
   section#info .content {
     background-color: #1A181B;
-    padding-left: 1.87rem; }
-    section#info .content .sub-head {
-      margin-top: -1.5rem; }
+    margin-top: 2.2rem; }
+    @media (min-width: 576px) {
+      section#info .content .padding {
+        padding-left: 1.87rem; }
+      section#info .content .section-head {
+        margin-top: -2rem;
+        line-height: 4.5rem; } }
+    section#info .content .description {
+      margin-top: 0.5rem; }
     section#info .content .link {
       margin-top: 2.125rem; }
       section#info .content .link .arrow-red {
@@ -355,16 +386,27 @@ section#info {
         display: inline-block;
         width: 1.25rem; }
     section#info .content .image {
-      padding: 0;
-      height: 450px;
-      width: 100%; }
+      height: 450px; }
+      @media (max-width: 576px) {
+        section#info .content .image {
+          margin-left: -30px;
+          margin-right: -30px; } }
       section#info .content .image .img {
         height: 450px;
         width: 100%; }
         section#info .content .image .img.img-prizes {
-          background: url("../images/prizes.png") no-repeat transparent -1rem 4rem; }
+          background-size: contain !important;
+          background: url("../images/prizes.png") no-repeat transparent left 4rem; }
         section#info .content .image .img.img-judges {
-          background: url("../images/judges.png") no-repeat transparent -1rem 11rem; }
+          background: url("../images/judges.png") no-repeat transparent left 10.8rem; }
+    @media (max-width: 576px) {
+      section#info .content {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px; }
+        section#info .content .section-head {
+          margin-top: 0; } }
 
 section#join_contest {
   padding-top: 1.75rem;
@@ -405,12 +447,6 @@ section#sponsors {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
-
-.sub-head {
-  color: #fff;
-  font-size: 3.25rem;
-  line-height: 4.25rem;
-  font-weight: 500; }
 
 .description {
   margin-top: 0.875rem;
@@ -500,68 +536,63 @@ section#sponsors {
         padding-bottom: 10px;
         margin-bottom: 14px; }
 
-#prizes
-.prizes {
-  margin-top: 62px; }
-  #prizes
-.prizes > div {
-    margin-bottom: 28px; }
-  #prizes
-.prizes .prize {
-    width: 245px;
-    height: 282px;
-    background-color: #1b1b1b;
-    border-radius: 4px; }
-    #prizes
-.prizes .prize .image {
-      margin-top: 44px; }
-    #prizes
-.prizes .prize .prize-line {
-      margin-top: 29px;
-      font-size: 14px;
-      line-height: 16px; }
-      #prizes
-.prizes .prize .prize-line .first {
-        padding-left: 0;
-        padding-right: 8px; }
-      #prizes
-.prizes .prize .prize-line .content {
-        padding: 0;
-        color: #D02A38;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center; }
-      #prizes
-.prizes .prize .prize-line .last {
-        padding-right: 0;
-        padding-left: 8px; }
-    #prizes
-.prizes .prize .prize-details {
-      margin-top: 16px; }
-      #prizes
-.prizes .prize .prize-details a {
-        font-size: 18px;
-        line-height: 28px;
-        color: #fff; }
-        #prizes
-.prizes .prize .prize-details a:hover {
-          text-decoration: none;
-          color: #D02A38; }
-    #prizes
-.prizes .prize.empty {
-      background-color: transparent; }
-    #prizes
-.prizes .prize .category {
-      margin-top: 20px;
-      font-size: 22px;
-      line-height: 30px;
-      color: #fff;
-      font-weight: 500; }
-    #prizes
-.prizes .prize hr {
-      margin-top: 0.5rem;
-      border-width: 2px;
-      margin-bottom: 0; }
+#prizes {
+  padding-bottom: 70px; }
+  #prizes .prizes {
+    margin-top: 62px; }
+    #prizes .prizes > div {
+      margin-bottom: 28px; }
+    #prizes .prizes .prize {
+      margin-bottom: 30px;
+      width: 245px;
+      height: 282px;
+      background-color: #1b1b1b;
+      border-radius: 4px; }
+      @media (max-width: 576px) {
+        #prizes .prizes .prize {
+          width: 100%; } }
+      #prizes .prizes .prize .image {
+        margin-top: 44px; }
+      #prizes .prizes .prize .prize-line {
+        margin-top: 29px;
+        font-size: 0.875rem;
+        line-height: 1rem; }
+        #prizes .prizes .prize .prize-line .first {
+          width: 30%;
+          padding-left: 0;
+          padding-right: 8px; }
+        #prizes .prizes .prize .prize-line .content {
+          width: 20%;
+          padding: 0;
+          color: #D02A38;
+          font-size: 0.875rem;
+          line-height: 1rem;
+          text-align: center; }
+        #prizes .prizes .prize .prize-line .last {
+          width: 30%;
+          padding-right: 0;
+          padding-left: 8px; }
+      #prizes .prizes .prize .prize-details {
+        margin-top: 16px; }
+        #prizes .prizes .prize .prize-details a {
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          color: #fff; }
+          #prizes .prizes .prize .prize-details a:hover {
+            text-decoration: none;
+            color: #D02A38; }
+      #prizes .prizes .prize.empty {
+        background-color: transparent; }
+      #prizes .prizes .prize .category {
+        margin-top: 20px;
+        font-size: 1.375rem;
+        line-height: 1.875rem;
+        color: #fff;
+        font-weight: 500; }
+      #prizes .prizes .prize hr {
+        margin-top: 0.5rem;
+        border-width: 2px;
+        margin-bottom: 0; }
 
 #judges {
   padding-top: 0; }
@@ -611,13 +642,19 @@ section#sponsors {
           #judges .judge .social a.instagram:hover {
             background-image: url("../images/social/instagram_active.png"); }
 
+@media (max-width: 576px) {
+  #page_sponsors {
+    padding-bottom: 1rem; } }
+
 #page_sponsors .page-header {
   margin-top: 0;
   margin-bottom: 60px; }
 
 #page_sponsors .sponsor {
-  width: 500px;
   margin-bottom: 62px; }
+  @media (min-width: 576px) {
+    #page_sponsors .sponsor {
+      width: 500px; } }
   #page_sponsors .sponsor .image {
     border-radius: 4px;
     background-color: #1b1b1b;
@@ -640,18 +677,21 @@ section#sponsors {
   #page_sponsors .sponsor .link {
     margin-top: 30px; }
 
-#contact_us .page-header {
-  font-size: 52px;
-  line-height: 68px; }
-
-#contact_us form {
-  margin-top: 80px; }
+@media (min-width: 576px) {
+  #contact_us form {
+    margin-top: 80px; } }
 
 #contact_us .two-cols .form-group {
   width: 435px; }
   #contact_us .two-cols .form-group .form-control {
     height: 60px;
     width: 435px; }
+
+@media (max-width: 576px) {
+  #contact_us .two-cols .form-group {
+    width: 100%; }
+    #contact_us .two-cols .form-group .form-control {
+      width: 100%; } }
 
 #contact_us .form-control {
   border-radius: 4px;
@@ -678,11 +718,6 @@ section#sponsors {
 #contact_us button:hover {
   cursor: pointer; }
 
-#faq .sub-head {
-  font-size: 44px;
-  line-height: 54px;
-  margin-bottom: 38px; }
-
 #faq .card {
   margin-top: 20px;
   border-radius: 4px;
@@ -697,7 +732,7 @@ section#sponsors {
     font-weight: 500;
     background: url("../images/dropdown_active.png") no-repeat transparent 30px center; }
     #faq .card .card-header > a.collapsed {
-      background: url("../images/dropdown.png") no-repeat transparent 30px center;
+      background-image: url("../images/dropdown.png");
       color: #fff; }
   #faq .card .card-block {
     color: #fff;
@@ -706,6 +741,11 @@ section#sponsors {
     padding-left: 62px;
     padding-right: 130px;
     display: inline-block; }
+    @media (max-width: 576px) {
+      #faq .card .card-block, #faq .card a[data-toggle="collapse"] {
+        padding-right: 0;
+        padding-left: 2.5rem;
+        background-position: 15px center; } }
 
 .text-primary {
   color: #D02A38 !important; }

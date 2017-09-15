@@ -1,10 +1,8 @@
 #contact_us {
-  .page-header {
-    font-size: 52px;
-    line-height: 68px;
-  }
-  form {
-    margin-top: 80px;
+  @media (min-width: 576px) {
+    form {
+      margin-top: 80px;
+    }
   }
   .two-cols {
     .form-group {
@@ -12,6 +10,14 @@
       .form-control {
         height: 60px;
         width: 435px;
+      }
+    }
+    @media (max-width: 576px) {
+      .form-group {
+        width: 100%;
+        .form-control {
+          width: 100%;
+        }
       }
     }
   }

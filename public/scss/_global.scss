@@ -101,6 +101,21 @@ body {
     color: $theme-primary;
   }
 }
+.sub-head {
+  color: $base;
+  font-size: 3.25rem;
+  line-height: 4.25rem;
+  font-weight: $fontWeightBold;
+}
+
+@media (min-width: 576px) {
+  .embed-responsive {
+    iframe {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
 .page-header {
   font-size: 44px;
   line-height: 54px;
@@ -109,6 +124,21 @@ body {
   margin-top: 10px;
   &.color-red {
     color: $theme-primary;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-head {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .sub-head {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .page-header {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 .page-description {

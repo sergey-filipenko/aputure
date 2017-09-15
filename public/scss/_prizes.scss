@@ -1,12 +1,17 @@
-#prizes
+#prizes {
+  padding-bottom: 70px;
   .prizes {
     margin-top: 62px;
     > div{
       margin-bottom: 28px;
     }
     .prize {
+      margin-bottom: 30px;
       width: 245px;
       height: 282px;
+      @media (max-width: 576px) {
+        width: 100%;
+      }
       background-color: $gray-darker;
 
       border-radius: 4px;
@@ -15,21 +20,25 @@
       }
       .prize-line {
         margin-top: 29px;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 0.875rem;
+        line-height: 1rem;
 
         .first {
+          width: 30%;
           padding-left: 0;
           padding-right: 8px;
         }
         .content {
+          
+          width: 20%;
           padding: 0;
           color: $theme-primary;
-          font-size: 14px;
-          line-height: 16px;
+          font-size: 0.875rem;
+          line-height: 1rem;
           text-align: center;
         }
         .last {
+          width: 30%;
           padding-right: 0;
           padding-left: 8px;
         }
@@ -38,8 +47,8 @@
       .prize-details {
         margin-top: 16px;
         a {
-          font-size: 18px;
-          line-height: 28px;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
           color: $base;
           &:hover {
             text-decoration: none;
@@ -52,8 +61,8 @@
       }
       .category {
         margin-top: 20px;
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 1.375rem;
+        line-height: 1.875rem;
         color: $base;
         font-weight: 500;
       }
@@ -66,3 +75,5 @@
       }
     }
   }
+}
+

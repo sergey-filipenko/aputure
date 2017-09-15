@@ -77,39 +77,38 @@ append body
       .row
         .col-sm-8
           h1.section-head Here's is a Sample Entry by #[span.text-red Max Honcharov]
-      .row
-        .col-sm-12.embed-responsive.embed-responsive-16by9
-          iframe(class="col-sm-12" frameborder="0" src="https://www.youtube.com/embed/CBEL5qfP6qI")
+        .embed-responsive.embed-responsive-16by9
+          iframe(frameborder="0" src="https://www.youtube.com/embed/CBEL5qfP6qI")
           
   section#info
     .container
       .row
         .col-sm-6
           .content
-            .row
+            .row.padding
               .col-sm-12
-                h2.sub-head #[span.text-red $500,000] in #[br]Prizes to be won
-            .row
+                h2.section-head #[span.text-red $500,000] in #[br]Prizes to be won
+            .row.padding
               .col-sm-8.description Incredible filmmaking equipment, experiences and more.
-            .row.link
+            .row.padding.link
               .col-sm-12
                 a(href="/prizes") More about Prizes#[span.arrow-red &nbsp;]
-            .row
-              .col-sm-12.image
+            .row.image
+              .col-sm-12
                 .img.img-prizes
             
         .col-sm-6
           .content
-            .row
+            .row.padding
               .col-sm-12
-                h1.sub-head Judges to #[br]impress
-            .row
+                h2.section-head Judges to #[br]impress
+            .row.padding
               .col-sm-8.description A panel of actors, filmmakers and industry experts.
-            .row.link
+            .row.padding.link
               .col-sm-12
                 a(href="/judges") More about Judges#[span.arrow-red &nbsp;]
-            .row
-              .col-sm-12.image
+            .row.image
+              .col-sm-12
                 .img.img-judges
 
 
@@ -129,9 +128,8 @@ append body
       .row
         .col-sm-8
           h2.section-subhead Sample Behind the Scenes video by Brian L Tan
-      .row
-          .col-sm-12.video.embed-responsive.embed-responsive-16by9
-            iframe(class="col-sm-12" frameborder="0" src="https://www.youtube.com/embed/FSoFtczxNu0")
+        .video.embed-responsive.embed-responsive-16by9
+          iframe(frameborder="0" src="https://www.youtube.com/embed/FSoFtczxNu0")
           
           
   section#sponsors

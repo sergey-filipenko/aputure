@@ -1,9 +1,4 @@
 #faq {
-  .sub-head {
-    font-size: 44px;
-    line-height: 54px;
-    margin-bottom: 38px;
-  }
   .card {
     margin-top: 20px;
     border-radius: 4px;
@@ -20,7 +15,7 @@
       font-weight: 500;
       background: url("../images/dropdown_active.png") no-repeat transparent 30px center;
       &.collapsed {
-        background: url("../images/dropdown.png") no-repeat transparent 30px center;
+        background-image: url("../images/dropdown.png");
         color: $base;
       }
     }
@@ -31,6 +26,11 @@
     .card-block, a[data-toggle="collapse"] {
       padding-left: 62px;
       padding-right: 130px;
+      @media (max-width: 576px) {
+        padding-right: 0;
+        padding-left: 2.5rem;
+        background-position: 15px center;  
+      }
       display: inline-block;
     }
   }
