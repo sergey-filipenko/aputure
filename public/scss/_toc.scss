@@ -1,4 +1,7 @@
 #toc {
+  @media (max-width: 576px) {
+    padding-bottom: 1rem;
+  }
   ol {
     padding-left: 14px;
     margin-top: 80px;

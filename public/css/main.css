@@ -519,6 +519,10 @@ section#sponsors {
         margin-top: 1.25rem;
         text-transform: uppercase; }
 
+@media (max-width: 576px) {
+  #toc {
+    padding-bottom: 1rem; } }
+
 #toc ol {
   padding-left: 14px;
   margin-top: 80px; }
@@ -583,6 +587,9 @@ section#sponsors {
             color: #D02A38; }
       #prizes .prizes .prize.empty {
         background-color: transparent; }
+        @media (max-width: 576px) {
+          #prizes .prizes .prize.empty {
+            display: none; } }
       #prizes .prizes .prize .category {
         margin-top: 20px;
         font-size: 1.375rem;

@@ -58,6 +58,10 @@
       }
       &.empty {
         background-color: transparent;
+        @media (max-width: 576px) {
+          display: none;
+        }
+
       }
       .category {
         margin-top: 20px;
