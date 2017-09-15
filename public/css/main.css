@@ -139,12 +139,15 @@ section.content {
   padding-bottom: 10px;
   font-size: 12px;
   line-height: 15px;
-  color: #b5b5b5; }
+  color: #D02A38; }
   #breadcrumb .arrow {
     padding: 0 10px; }
   #breadcrumb a {
+    color: #b5b5b5;
     font-size: 12px;
     line-height: 15px; }
+    #breadcrumb a:hover {
+      color: #D02A38; }
 
 .tooltip.show {
   opacity: 1; }
@@ -175,6 +178,9 @@ section.content {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
+  @media (max-width: 576px) {
+    #mainNav {
+      background-color: #282828; } }
   #mainNav .navbar-brand {
     font-weight: 700;
     color: #D02A38;

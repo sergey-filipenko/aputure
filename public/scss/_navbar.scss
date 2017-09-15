@@ -2,7 +2,11 @@
 #mainNav {
 
   border-color: fade-out($gray-darker, .95);
+  
   background-color: rgba(85, 85, 85, 0.3);;
+  @media (max-width: 576px) {
+    background-color: $gray-dark;
+  }
   @include serif-font;
   @include transition-all;
   .navbar-brand {

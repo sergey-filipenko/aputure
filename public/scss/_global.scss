@@ -168,13 +168,17 @@ section.content {
   padding-bottom: 10px;
   font-size: 12px;
   line-height: 15px;
-  color: $gray-lighter;
+  color: $theme-primary;
   .arrow {
     padding: 0 10px;
   }
   a {
+    color: $gray-lighter;
     font-size: 12px;
     line-height: 15px;
+    &:hover {
+      color: $theme-primary;
+    }
   }
 }
 .tooltip.show {
