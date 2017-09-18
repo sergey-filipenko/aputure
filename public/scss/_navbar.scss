@@ -5,7 +5,7 @@
   
   background-color: rgba(85, 85, 85, 0.3);;
   @media (max-width: 576px) {
-    background-color: $gray-dark;
+    background-color: $gray-darker;
   }
   @include serif-font;
   @include transition-all;
@@ -27,16 +27,26 @@
   
   .navbar-nav {
     > li.nav-item {
+      @media (max-width: 576px) {
+        text-align: center;
+        padding: 1.5rem;
+        border-bottom: 2px solid $gray-light;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
       > a.nav-link:focus,
       > a.nav-link {
         padding: 0 0 0 2.375rem;
-        @media (max-width: 576px) {
-          padding: 0.3rem;
-          font-size: 1rem;
-        }
         font-size: 0.84rem; // 0.8rem
         line-height: 1.125rem;
         color: $base;
+        @media (max-width: 576px) {
+          padding: 0.3rem;
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
         &:hover {
           color:  $theme-primary;
         }
