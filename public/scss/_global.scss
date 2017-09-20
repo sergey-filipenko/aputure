@@ -156,7 +156,7 @@ body {
   color: $theme-primary;
 }
 .btn-danger {
-  background: url('../images/arrowwhite.png') no-repeat $theme-primary 80% center;
+  background: url('lights_arrowwhite.png') no-repeat $theme-primary 80% center;
   padding: 14px 58px 14px 42px;
 }
 
@@ -204,7 +204,7 @@ section.content {
   }
 }
 .arrow-red {
-  background: url('../images/buttonarrow.png') no-repeat transparent center center;
+  background: url('lights_buttonarrow.png') no-repeat transparent center center;
   display: inline-block;
   width: 20px;
 }

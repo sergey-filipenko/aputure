@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 800px;
   position: relative;
-  background: url(../images/photo_background.png) no-repeat top center;
+  background: url(lights_photo_background.png) no-repeat top center;
   @media (max-width: 576px) {
     padding-bottom: 24rem;
     background-position: 72% bottom;
@@ -69,7 +69,7 @@ section#how-to-join {
 }
 section#countdown {
   padding-top: 6.6rem;
-  background: url(../images/circle.png) no-repeat 78% top;
+  background: url(lights_circle.png) no-repeat 78% top;
   #js-countdown {
     margin-top: 3.75rem;
     .countdown-column {
@@ -126,7 +126,7 @@ section#info {
     .link {
       margin-top: 2.125rem;
       .arrow-red {
-        background: url('../images/buttonarrow.png') no-repeat transparent center center;
+        background: url('lights_buttonarrow.png') no-repeat transparent center center;
         display: inline-block;
         width: 1.25rem;
       }
@@ -142,10 +142,10 @@ section#info {
         }
         &.img-prizes {
           background-size: contain !important;
-          background: url("../images/prizes.png") no-repeat transparent left 4rem;
+          background: url("lights_prizes.png") no-repeat transparent left 4rem;
         }
         &.img-judges {
-          background: url("../images/judges.png") no-repeat transparent left 10.8rem;
+          background: url("lights_judges.png") no-repeat transparent left 10.8rem;
         }
       }
     }
@@ -163,7 +163,7 @@ section#info {
 
 section#join_contest {
   padding-top: 1.75rem;
-  background: url(../images/joincontest_bg.png) no-repeat top center;
+  background: url("lights_joincontest_bg.png") no-repeat top center;
   @media (max-width: 576px) {
     background-position: -10rem center;
   }
@@ -239,10 +239,10 @@ section#sponsors {
       line-height: 1.25rem;
       padding-left: 2.5rem;
       &.begin {
-        background: url(../images/begin_icon.png) no-repeat left center;
+        background: url("lights_begin_icon.png") no-repeat left center;
       }
       &.ends {
-        background: url(../images/ends_icon.png) no-repeat left center;
+        background: url("lights_ends_icon.png") no-repeat left center;
       }
       @media (max-width: 576px) {
         font-size: 1rem;

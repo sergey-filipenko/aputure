@@ -13,9 +13,9 @@
       font-size: 18px;
       line-height: 28px;
       font-weight: 500;
-      background: url("../images/dropdown_active.png") no-repeat transparent 30px center;
+      background: url("lights_dropdown_active.png") no-repeat transparent 30px center;
       &.collapsed {
-        background-image: url("../images/dropdown.png");
+        background-image: url("lights_dropdown.png");
         color: $base;
       }
     }

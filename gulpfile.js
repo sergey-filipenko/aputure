@@ -1,12 +1,12 @@
-let gulp = require('gulp');
-let sass = require('gulp-sass');
-let browserSync = require('browser-sync');
-let header = require('gulp-header');
-let nodemon = require('gulp-nodemon');
-let cleanCSS = require('gulp-clean-css');
-let sourcemaps = require('gulp-sourcemaps');
-let rename = require("gulp-rename");
-let pkg = require('./package.json');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var browserSync = require('browser-sync');
+var header = require('gulp-header');
+var nodemon = require('gulp-nodemon');
+var cleanCSS = require('gulp-clean-css');
+var sourcemaps = require('gulp-sourcemaps');
+var rename = require("gulp-rename");
+var pkg = require('./package.json');
 
 // we'd need a slight delay to reload browsers
 // connected to browser-sync after restarting nodemon
@@ -51,7 +51,8 @@ gulp.task('sass', function () {
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('public/css'));
+    .pipe(rename('lightsenlocation.css'))
+    .pipe(gulp.dest('public/css/'));
 });
 
 gulp.task('sass:watch', function () {
